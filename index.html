@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Form</title>
+    <script>
+        function add() {
+            var addend1, addend2, sum;
+            addend1 = Number(document.getElementById("txtAddend1").value);
+            addend2 = Number(document.getElementById("txtAddend2").value);
+            sum = addend1 + addend2;
+            document.getElementById("txtSum").value = sum;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="form-add">
+        <input id="txtAddend1" type="number" placeholder="Enter first number" />
+        <input id="txtAddend2" type="number" placeholder="Enter second number" />
+        <button onclick="add()">Add</button>
+        <input id="txtSum" />
+    </div>
+</body>
+
+</html>
